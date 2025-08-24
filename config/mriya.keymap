@@ -23,31 +23,31 @@
 
         default_layer {
             bindings = <
-              &kp ESC    &kp N1  &kp N2    &kp N3            &kp N4                &kp N5    &kp N6  &kp N7     &kp N8         &kp N9      &kp N0    &kp MINUS
-&kp LEFT_ALT  &kp TAB    &kp Q   &kp W     &kp E             &kp R                 &kp T     &kp Y   &kp U      &kp I          &kp O       &kp P     &kp LBKT    &kp ENTER
-              &kp LCTRL  &kp A   &kp S     &kp D             &kp F                 &kp G     &kp H   &kp J      &kp K          &kp L       &kp SEMI  &kp SQT
-              &kp LSHFT  &kp Z   &kp X     &kp C             &kp V                 &kp B     &kp N   &kp M      &kp COMMA      &kp DOT     &kp FSLH  &kp RSHIFT
-                                 &kp LGUI  &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 1     &to 2   &kp SPACE  &kp BACKSPACE  &kp DELETE
+              &kp ESC    &kp N1  &kp N2    &kp N3            &kp N4                &kp N5    &kp N6  &kp N7                 &kp N8         &kp N9      &kp N0    &kp MINUS
+&kp LEFT_ALT  &kp TAB    &kp Q   &kp W     &kp E             &kp R                 &kp T     &kp Y   &kp U                  &kp I          &kp O       &kp P     &kp LBKT    &kp ENTER
+              &kp GRAVE  &kp A   &kp S     &kp D             &kp F                 &kp G     &kp H   &kp J                  &kp K          &kp L       &kp SEMI  &kp SQT
+              &kp LSHFT  &kp Z   &kp X     &kp C             &kp V                 &kp B     &kp N   &kp M                  &kp COMMA      &kp DOT     &kp FSLH  &kp RSHIFT
+                                 &kp LGUI  &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 1     &mo 2   &mt RIGHT_SHIFT SPACE  &kp BACKSPACE  &kp DELETE
             >;
         };
 
         lower_layer {
             bindings = <
-        &trans  &kp F1             &kp F2  &kp F3     &kp F4   &kp F5     &kp KP_NUM                &kp LESS_THAN    &kp GREATER_THAN  &trans           &kp MINUS     &kp EQUAL
-&trans  &trans  &kp F6             &kp F7  &kp F8     &kp F9   &kp F10    &kp PIPE                  &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9  &kp KP_PLUS   &kp KP_MULTIPLY  &trans
-        &trans  &kp K_APPLICATION  &none   &none      &kp F11  &kp F12    &kp KP_LEFT_PARENTHESIS   &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6  &kp KP_MINUS  &kp KP_DIVIDE
-        &trans  &none              &none   &none      &none    &none      &kp KP_RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3  &kp KP_DOT    &trans
-                                   &trans  &lt 3 TAB  &trans   &trans     &trans                    &kp KP_NUMBER_0  &lt 3 DEL         &trans
+        &trans  &kp F1             &kp F2  &kp F3      &kp F4   &kp F5        &kp KP_NUM                &kp LESS_THAN    &kp GREATER_THAN  &trans           &kp MINUS     &kp EQUAL
+&trans  &trans  &kp F6             &kp F7  &kp F8      &kp F9   &kp F10       &kp PIPE                  &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9  &kp KP_PLUS   &kp KP_MULTIPLY  &trans
+        &trans  &kp K_APPLICATION  &none   &kp LS(F9)  &kp F11  &kp F12       &kp KP_LEFT_PARENTHESIS   &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6  &kp KP_MINUS  &kp KP_DIVIDE
+        &trans  &none              &none   &none       &none    &kp LC(F1)    &kp KP_RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3  &kp KP_DOT    &trans
+                                   &trans  &lt 3 TAB   &trans   &trans        &trans                    &kp KP_NUMBER_0  &lt 3 DEL         &trans
             >;
         };
 
         raise_layer {
             bindings = <
-        &trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans          &kp PRINTSCREEN  &kp SCROLLLOCK     &kp PAUSE_BREAK  &kp INS    &trans             &trans
-&trans  &trans  &trans  &trans  &kp KP_N8             &kp KP_N9              &kp KP_MINUS    &kp PAGE_UP      &kp HOME           &kp UP_ARROW     &kp END    &trans             &trans  &trans
-        &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &kp PAGE_DOWN    &kp LEFT           &kp DOWN         &kp RIGHT  &kp K_APPLICATION  &trans
-        &trans  &trans  &trans  &kp KP_N2             &kp KP_N3              &kp KP_DOT      &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans             &trans
-                        &trans  &trans                &trans                 &lt 3 RET       &lt 3 ESC        &trans             &trans           &trans
+        &trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans                  &kp PRINTSCREEN  &kp SCROLLLOCK     &kp PAUSE_BREAK  &kp INS    &trans             &trans
+&trans  &trans  &trans  &trans  &kp KP_N8             &kp KP_N9              &kp KP_DIVIDE           &kp PAGE_UP      &kp HOME           &kp UP_ARROW     &kp END    &trans             &trans  &trans
+        &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH    &kp PAGE_DOWN    &kp LEFT           &kp DOWN         &kp RIGHT  &kp K_APPLICATION  &trans
+        &trans  &trans  &trans  &kp LESS_THAN         &kp GREATER_THAN       &kp PIPE                &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans             &trans
+                        &trans  &trans                &trans                 &lt 3 RET               &lt 3 ESC        &trans             &trans           &trans
             >;
         };
 
